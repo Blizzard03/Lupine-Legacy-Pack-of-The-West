@@ -1,2 +1,1 @@
-# Lupine-Legacy-Pack-of-The-West
- 
+# LUPINE LEGACY : PACK OF THE WEST
