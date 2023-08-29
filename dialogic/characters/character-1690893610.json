@@ -1,8 +1,8 @@
 {
-	"color": "#ffffffff",
+	"color": "#ff00c9ff",
 	"description": "",
-	"display_name": "",
-	"display_name_bool": false,
+	"display_name": "Kate",
+	"display_name_bool": true,
 	"id": "character-1690893610.json",
 	"mirror_portraits": false,
 	"name": "Kate",
@@ -13,7 +13,7 @@
 	"portraits": [
 		{
 			"name": "Default",
-			"path": ""
+			"path": "res://Assets/images/NPC/Kate/She Wolf 2.png"
 		}
 	],
 	"scale": 100,
