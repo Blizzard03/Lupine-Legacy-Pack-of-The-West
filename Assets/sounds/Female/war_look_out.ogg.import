@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/war_look_out.ogg-018d3e161ec4cf343609cd4e2643e184.oggstr"
+
+[deps]
+
+source_file="res://Assets/sounds/Female/war_look_out.ogg"
+dest_files=[ "res://.import/war_look_out.ogg-018d3e161ec4cf343609cd4e2643e184.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

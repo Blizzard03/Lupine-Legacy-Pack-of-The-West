@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Quit_Button.mp3-027a30301d1a492bf221c17a9ac7f9a8.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/All Button/Quit_Button.mp3"
+dest_files=[ "res://.import/Quit_Button.mp3-027a30301d1a492bf221c17a9ac7f9a8.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

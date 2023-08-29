@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/war_medic.ogg-8afa1879fc8a80dbf45a09875a0b2e59.oggstr"
+
+[deps]
+
+source_file="res://Assets/sounds/Female/war_medic.ogg"
+dest_files=[ "res://.import/war_medic.ogg-8afa1879fc8a80dbf45a09875a0b2e59.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

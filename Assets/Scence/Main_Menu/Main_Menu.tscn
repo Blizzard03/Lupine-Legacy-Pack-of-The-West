@@ -1,0 +1,184 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://Assets/Script/Controller/Main  Menu/Main Menu.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Scence/UI/Main_Menu/Buttons/New_Game_Button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/images/Background/Main Menu/timber wolf howling.jpg" type="Texture" id=3]
+[ext_resource path="res://Assets/Scence/UI/Main_Menu/Buttons/Continue_Button.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/Scence/UI/Main_Menu/Buttons/Options_Button.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Assets/Scence/UI/Main_Menu/Buttons/Exit_Button.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/Scence/Effect/Main_Menu/Efect/Fadein.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Assets/sounds/Main_Menu/Main_Menu.mp3" type="AudioStream" id=8]
+[ext_resource path="res://Assets/sounds/Click button.mp3" type="AudioStream" id=9]
+[ext_resource path="res://Assets/sounds/Start_Buton_Sound/Start_Buton_Sound.mp3" type="AudioStream" id=10]
+[ext_resource path="res://Assets/sounds/boing_x.wav" type="AudioStream" id=11]
+[ext_resource path="res://Assets/Scence/UI/FPS_Label/FPS.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Assets/Font/Pixel/Pixel_Bold.tres" type="DynamicFont" id=13]
+[ext_resource path="res://Assets/Font/Wwwolfspirit-xR0m.ttf" type="DynamicFontData" id=14]
+[ext_resource path="res://Assets/Font/Wolf Moon.ttf" type="DynamicFontData" id=15]
+[ext_resource path="res://Assets/Font/Pixel/Pixel_Italic.tres" type="DynamicFontData" id=16]
+
+[sub_resource type="DynamicFont" id=2]
+size = 24
+outline_color = Color( 0, 0.619608, 1, 1 )
+font_data = ExtResource( 15 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 69
+font_data = ExtResource( 14 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 35
+use_filter = true
+font_data = ExtResource( 16 )
+
+[node name="Main_Menu" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+rect_min_size = Vector2( 1280, 720 )
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Buttons_List" type="HBoxContainer" parent="."]
+margin_left = 744.0
+margin_top = 256.0
+margin_right = 1184.0
+margin_bottom = 526.0
+rect_min_size = Vector2( 431, 270 )
+size_flags_vertical = 3
+
+[node name="Button" type="VBoxContainer" parent="Buttons_List"]
+margin_right = 440.0
+margin_bottom = 270.0
+rect_min_size = Vector2( 431, 270 )
+size_flags_horizontal = 3
+size_flags_vertical = 4
+
+[node name="New_Game_Button" parent="Buttons_List/Button" instance=ExtResource( 2 )]
+margin_right = 440.0
+rect_min_size = Vector2( 440, 60 )
+icon_align = 1
+
+[node name="New_Game_Sound" type="AudioStreamPlayer2D" parent="Buttons_List/Button/New_Game_Button"]
+visible = false
+position = Vector2( -360, -180 )
+stream = ExtResource( 10 )
+volume_db = -20.0
+
+[node name="Continue_Button" parent="Buttons_List/Button" instance=ExtResource( 4 )]
+margin_top = 64.0
+margin_right = 440.0
+margin_bottom = 124.0
+rect_min_size = Vector2( 440, 60 )
+
+[node name="Continue_Sound" type="AudioStreamPlayer2D" parent="Buttons_List/Button/Continue_Button"]
+visible = false
+stream = ExtResource( 10 )
+volume_db = -20.0
+bus = "SFX"
+
+[node name="Options_Button" parent="Buttons_List/Button" instance=ExtResource( 5 )]
+margin_top = 128.0
+margin_right = 440.0
+margin_bottom = 188.0
+rect_min_size = Vector2( 440, 60 )
+
+[node name="Options_Sound" type="AudioStreamPlayer2D" parent="Buttons_List/Button/Options_Button"]
+visible = false
+stream = ExtResource( 9 )
+volume_db = -20.0
+bus = "SFX"
+
+[node name="Exit_Button" parent="Buttons_List/Button" instance=ExtResource( 6 )]
+margin_top = 192.0
+margin_right = 440.0
+margin_bottom = 252.0
+rect_min_size = Vector2( 440, 60 )
+
+[node name="Exit_Sound" type="AudioStreamPlayer2D" parent="Buttons_List/Button/Exit_Button"]
+visible = false
+stream = ExtResource( 11 )
+volume_db = -20.0
+bus = "SFX"
+
+[node name="Fadein" parent="." instance=ExtResource( 7 )]
+visible = false
+
+[node name="Backsound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = -5.0
+bus = "Music"
+
+[node name="FPS_Label" parent="." instance=ExtResource( 12 )]
+visible = false
+margin_left = 7.0
+margin_top = 3.0
+margin_right = 97.0
+margin_bottom = 23.0
+
+[node name="Tittle" type="Label" parent="."]
+margin_left = 97.0
+margin_top = 64.0
+margin_right = 544.0
+margin_bottom = 140.0
+custom_colors/font_color = Color( 0, 0.985714, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.00784314, 0.345098, 0.0980392, 1 )
+custom_constants/shadow_offset_x = 4
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 2 )
+text = "LUPINE LEGANCY"
+valign = 1
+
+[node name="Sub Tittle" type="Label" parent="."]
+margin_left = 200.0
+margin_top = 136.0
+margin_right = 464.0
+margin_bottom = 200.0
+rect_pivot_offset = Vector2( 201, 10 )
+custom_colors/font_color = Color( 1, 1, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.482353, 0.0156863, 0.25098, 1 )
+custom_constants/shadow_offset_x = 4
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = ExtResource( 13 )
+text = "PACK OF THE WEST"
+valign = 1
+
+[node name="Howl" type="Label" parent="."]
+margin_left = 767.0
+margin_top = 167.0
+margin_right = 836.0
+margin_bottom = 234.0
+rect_pivot_offset = Vector2( 56, 124 )
+custom_colors/font_color = Color( 0.470588, 0.470588, 0.470588, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "c"
+valign = 1
+
+[node name="Howling" type="AudioStreamPlayer2D" parent="Howl"]
+
+[node name="Version" type="Label" parent="."]
+margin_left = 1184.0
+margin_top = 656.0
+margin_right = 1249.0
+margin_bottom = 692.0
+custom_colors/font_color = Color( 0, 0.976471, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.0156863, 0.431373, 0.164706, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 3 )
+text = "V 1.0"
+
+[connection signal="mouse_entered" from="Buttons_List/Button/New_Game_Button" to="." method="_on_New_Game_Button_mouse_entered"]
+[connection signal="pressed" from="Buttons_List/Button/New_Game_Button" to="." method="_on_New_Game_Button_pressed"]
+[connection signal="mouse_entered" from="Buttons_List/Button/Continue_Button" to="." method="_on_Continue_Button_mouse_entered"]
+[connection signal="pressed" from="Buttons_List/Button/Continue_Button" to="." method="_on_Continue_Button_pressed"]
+[connection signal="mouse_entered" from="Buttons_List/Button/Options_Button" to="." method="_on_Options_Button_mouse_entered"]
+[connection signal="pressed" from="Buttons_List/Button/Options_Button" to="." method="_on_Options_Button_pressed"]
+[connection signal="mouse_entered" from="Buttons_List/Button/Exit_Button" to="." method="_on_Exit_Button_mouse_entered"]
+[connection signal="pressed" from="Buttons_List/Button/Exit_Button" to="." method="_on_Exit_Button_pressed"]
+[connection signal="mouse_entered" from="Howl" to="." method="_on_Howl_mouse_entered"]

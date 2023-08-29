@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/The Wolf Online Simulator Soundtrack Easter Event Castelvenia Netflix.mp3-f03c4eb89786bd3301a68eabe4d48c91.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/The Wolf Online Simulator Soundtrack Easter Event Castelvenia Netflix.mp3"
+dest_files=[ "res://.import/The Wolf Online Simulator Soundtrack Easter Event Castelvenia Netflix.mp3-f03c4eb89786bd3301a68eabe4d48c91.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

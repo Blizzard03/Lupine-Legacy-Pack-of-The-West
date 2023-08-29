@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/war_cover_me.ogg-223ce6d41eaa420adb12c955b93b2546.oggstr"
+
+[deps]
+
+source_file="res://Assets/sounds/Female/war_cover_me.ogg"
+dest_files=[ "res://.import/war_cover_me.ogg-223ce6d41eaa420adb12c955b93b2546.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

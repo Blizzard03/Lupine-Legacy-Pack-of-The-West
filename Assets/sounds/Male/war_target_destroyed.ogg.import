@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/war_target_destroyed.ogg-3b46a33e704a813b732e1c642939e605.oggstr"
+
+[deps]
+
+source_file="res://Assets/sounds/Male/war_target_destroyed.ogg"
+dest_files=[ "res://.import/war_target_destroyed.ogg-3b46a33e704a813b732e1c642939e605.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

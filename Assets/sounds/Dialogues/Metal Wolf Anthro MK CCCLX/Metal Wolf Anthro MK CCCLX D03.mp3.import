@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Metal Wolf Anthro MK CCCLX D03.mp3-d80f5bb079b1967612167e60a79ae462.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/Dialogues/Metal Wolf Anthro MK CCCLX/Metal Wolf Anthro MK CCCLX D03.mp3"
+dest_files=[ "res://.import/Metal Wolf Anthro MK CCCLX D03.mp3-d80f5bb079b1967612167e60a79ae462.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

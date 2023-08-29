@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/mission_failed.ogg-d5cae6fe1351a936c17d8fd745c71de4.oggstr"
+
+[deps]
+
+source_file="res://Assets/sounds/Female/mission_failed.ogg"
+dest_files=[ "res://.import/mission_failed.ogg-d5cae6fe1351a936c17d8fd745c71de4.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

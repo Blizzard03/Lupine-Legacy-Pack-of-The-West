@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Scence/UI/Character Selector/Button_Selector.tscn" type="PackedScene" id=1]
+
+[node name="Luna_Button_Selector" instance=ExtResource( 1 )]
+
+[node name="Label" parent="." index="0"]
+text = "Luna Lupine"

@@ -1,0 +1,383 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "KinematicBody2D",
+"class": "Blizzard",
+"language": "GDScript",
+"path": "res://Assets/Script/Controller/Actor/Blizzard/Blizzard.gd"
+}, {
+"base": "Inventory",
+"class": "CurrencyInventory",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/inventories/currency_inventory.gd"
+}, {
+"base": "Reference",
+"class": "DTS",
+"language": "GDScript",
+"path": "res://addons/dialogic/Localization/translation_service.gd"
+}, {
+"base": "Node",
+"class": "Dialogic",
+"language": "GDScript",
+"path": "res://addons/dialogic/Other/DialogicClass.gd"
+}, {
+"base": "Reference",
+"class": "DialogicAnimaPropertiesHelper",
+"language": "GDScript",
+"path": "res://addons/dialogic/Nodes/Anima/DialogicAnimaPropertiesHelper.gd"
+}, {
+"base": "Node",
+"class": "DialogicAnimaResources",
+"language": "GDScript",
+"path": "res://addons/dialogic/Nodes/Anima/DialogicAnimaResources.gd"
+}, {
+"base": "Control",
+"class": "DialogicBackgroundMusic",
+"language": "GDScript",
+"path": "res://addons/dialogic/Nodes/BackgroundMusic.gd"
+}, {
+"base": "Node",
+"class": "DialogicCustomEvents",
+"language": "GDScript",
+"path": "res://addons/dialogic/Nodes/DialogicCustomEvents.gd"
+}, {
+"base": "Node",
+"class": "DialogicDefinitionsUtil",
+"language": "GDScript",
+"path": "res://addons/dialogic/Other/DialogicDefinitionsUtil.gd"
+}, {
+"base": "Node",
+"class": "DialogicParser",
+"language": "GDScript",
+"path": "res://addons/dialogic/Parser/DialogicParser.gd"
+}, {
+"base": "Reference",
+"class": "DialogicResources",
+"language": "GDScript",
+"path": "res://addons/dialogic/Other/DialogicResources.gd"
+}, {
+"base": "Reference",
+"class": "DialogicUtil",
+"language": "GDScript",
+"path": "res://addons/dialogic/Other/DialogicUtil.gd"
+}, {
+"base": "Resource",
+"class": "EquipBonus",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/equip_bonus.gd"
+}, {
+"base": "CanvasLayer",
+"class": "FpsLabel",
+"language": "GDScript",
+"path": "res://FPSLabel.gd"
+}, {
+"base": "ItemStackView",
+"class": "GrabbedItemStackView",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/view_extra/grabbed_item_stack.gd"
+}, {
+"base": "Inventory",
+"class": "GridInventory",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/inventories/grid_inventory.gd"
+}, {
+"base": "Node",
+"class": "GroundItemManager",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/ground/ground_items_manager.gd"
+}, {
+"base": "Area2D",
+"class": "GroundItemStackView2D",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/ground/ground_item_stack_view_2d.gd"
+}, {
+"base": "CollisionObject",
+"class": "GroundItemStackView3D",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/ground/ground_item_stack_view_3d.gd"
+}, {
+"base": "PanelContainer",
+"class": "HistoryRow",
+"language": "GDScript",
+"path": "res://addons/dialogic/Example Assets/History/HistoryRow.gd"
+}, {
+"base": "Resource",
+"class": "Inventory",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/inventories/inventory.gd"
+}, {
+"base": "Container",
+"class": "InventoryTooltip",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/view_extra/tooltip.gd"
+}, {
+"base": "Reference",
+"class": "InventoryTooltipProperty",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/view_extra/tooltip_property.gd"
+}, {
+"base": "Node",
+"class": "InventoryVendor",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/crafting/vendor.gd"
+}, {
+"base": "Control",
+"class": "InventoryView",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/inventory_view.gd"
+}, {
+"base": "Resource",
+"class": "ItemConversion",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/crafting/item_conversion.gd"
+}, {
+"base": "Resource",
+"class": "ItemGenerator",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/crafting/item_generator.gd"
+}, {
+"base": "ItemGenerator",
+"class": "ItemGeneratorEquipmentBonus",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/extension/item_generator_equipment_bonus.gd"
+}, {
+"base": "Resource",
+"class": "ItemInstantiator",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/item_instantiator.gd"
+}, {
+"base": "Resource",
+"class": "ItemPattern",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/crafting/item_pattern.gd"
+}, {
+"base": "ItemPattern",
+"class": "ItemPatternEquipStat",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/extension/item_pattern_equip_stat.gd"
+}, {
+"base": "ItemPattern",
+"class": "ItemPatternHighlightStack",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/extension/item_pattern_highlight_stack.gd"
+}, {
+"base": "ItemPattern",
+"class": "ItemPatternName",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/extension/item_pattern_name.gd"
+}, {
+"base": "Reference",
+"class": "ItemStack",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/item_stack.gd"
+}, {
+"base": "Control",
+"class": "ItemStackView",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/view_extra/item_stack_view.gd"
+}, {
+"base": "Resource",
+"class": "ItemType",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/item_type.gd"
+}, {
+"base": "Node2D",
+"class": "Main_Menu",
+"language": "GDScript",
+"path": "res://Assets/Script/Controller/Main  Menu/Main Menu.gd"
+}, {
+"base": "Inventory",
+"class": "RestrictedInventory",
+"language": "GDScript",
+"path": "res://addons/wyvernbox/inventories/restricted_inventory.gd"
+} ]
+_global_script_class_icons={
+"Blizzard": "",
+"CurrencyInventory": "res://addons/wyvernbox/icons/currency_inventory.png",
+"DTS": "",
+"Dialogic": "",
+"DialogicAnimaPropertiesHelper": "",
+"DialogicAnimaResources": "",
+"DialogicBackgroundMusic": "",
+"DialogicCustomEvents": "",
+"DialogicDefinitionsUtil": "",
+"DialogicParser": "",
+"DialogicResources": "",
+"DialogicUtil": "",
+"EquipBonus": "",
+"FpsLabel": "",
+"GrabbedItemStackView": "res://addons/wyvernbox/icons/grabbed_item_stack.png",
+"GridInventory": "res://addons/wyvernbox/icons/grid_inventory.png",
+"GroundItemManager": "res://addons/wyvernbox/icons/ground_item_manager.png",
+"GroundItemStackView2D": "res://addons/wyvernbox/icons/item_stack_view_2d.png",
+"GroundItemStackView3D": "res://addons/wyvernbox/icons/item_stack_view_3d.png",
+"HistoryRow": "",
+"Inventory": "res://addons/wyvernbox/icons/inventory.png",
+"InventoryTooltip": "res://addons/wyvernbox/icons/tooltip.png",
+"InventoryTooltipProperty": "",
+"InventoryVendor": "res://addons/wyvernbox/icons/vendor.png",
+"InventoryView": "res://addons/wyvernbox/icons/inventory_view.png",
+"ItemConversion": "res://addons/wyvernbox/icons/item_conversion.png",
+"ItemGenerator": "res://addons/wyvernbox/icons/item_generator.png",
+"ItemGeneratorEquipmentBonus": "",
+"ItemInstantiator": "res://addons/wyvernbox/icons/item_instantiator.png",
+"ItemPattern": "res://addons/wyvernbox/icons/item_pattern.png",
+"ItemPatternEquipStat": "",
+"ItemPatternHighlightStack": "",
+"ItemPatternName": "",
+"ItemStack": "",
+"ItemStackView": "res://addons/wyvernbox/icons/grabbed_item_stack.png",
+"ItemType": "res://addons/wyvernbox/icons/item_type.png",
+"Main_Menu": "",
+"RestrictedInventory": "res://addons/wyvernbox/icons/restricted_inventory.png"
+}
+
+[application]
+
+config/name="LUPINE LEGACY : PACK OF THE WEST"
+run/main_scene="res://Assets/Scence/Main_Menu/Main_Menu.tscn"
+boot_splash/image="res://Assets/images/Logo/WPA TEAM LOGO.png"
+config/icon="res://Assets/images/Logo/Logo.png"
+
+[audio]
+
+enable_audio_input=true
+
+[autoload]
+
+SaveSettingsData="*res://Assets/Script/Save/Settings/Save_Settings_Data.gd"
+GlobalSettings="*res://Global_Settings.gd"
+DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+GuiTransitions="*res://addons/simple-gui-transitions/singleton.gd"
+
+[debug]
+
+settings/fps/force_fps=144
+
+[display]
+
+window/size/width=1280
+window/size/height=720
+window/size/resizable=false
+window/size/always_on_top=true
+window/dpi/allow_hidpi=true
+window/vsync/vsync_via_compositor=true
+window/per_pixel_transparency/allowed=true
+window/per_pixel_transparency/enabled=true
+mouse_cursor/custom_image="res://Assets/images/Cursor/Cursor 32x32.png"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/dialogic/plugin.cfg", "res://addons/wyvernbox/editor/plugin.cfg" )
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[gui_transitions]
+
+config/default/auto_start=true
+config/default/fade_layout=true
+config/default/center_pivot=true
+config/default/duration=0.5
+config/default/delay=0.5
+config/default/transition_type="QUAD"
+config/default/ease_type="IN_OUT"
+config/default/animation_enter=4
+config/default/animation_leave=4
+
+[input]
+
+Move_Left={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":65,"unicode":0,"echo":false,"script":null)
+ ]
+}
+Move_Right={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":68,"unicode":0,"echo":false,"script":null)
+ ]
+}
+Move_Up={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":87,"unicode":0,"echo":false,"script":null)
+ ]
+}
+Move_Down={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":83,"unicode":0,"echo":false,"script":null)
+ ]
+}
+dialogic_default_action={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":90,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+menu_inventory={
+"deadzone": 0.2,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":73,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+Pause_Game={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":80,"unicode":0,"echo":false,"script":null)
+ ]
+}
+inventory_less={
+"deadzone": 0.01,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777240,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":6,"pressure":0.0,"pressed":false,"script":null)
+ ]
+}
+inventory_more={
+"deadzone": 0.01,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777237,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":7,"pressure":0.0,"pressed":false,"script":null)
+ ]
+}
+inventory_filter={
+"deadzone": 0.01,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":70,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":3,"pressure":0.0,"pressed":false,"script":null)
+ ]
+}
+
+[mono]
+
+project/assembly_name="The Wolf 1 . 3 Godot 3 . 5 . 2"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/intended_usage/framebuffer_allocation=0
+quality/intended_usage/framebuffer_allocation.mobile=0
+2d/snapping/use_gpu_pixel_snap=true
+threads/thread_model=2
+threads/thread_safe_bvh=true
+misc/lossless_compression/force_png=true
+quality/shadows/filter_mode=2
+quality/shading/force_vertex_shading=true
+quality/shading/force_lambert_over_burley=true
+quality/shading/force_blinn_over_ggx=true
+quality/shading/use_physical_light_attenuation=true
+quality/filters/anisotropic_filter_level=16
+quality/filters/use_nearest_mipmap_filter=true
+2d/options/use_software_skinning=false
+quality/subsurface_scattering/quality=2
+quality/subsurface_scattering/follow_surface=true
+quality/voxel_cone_tracing/high_quality=true
+quality/filters/msaa=4
+quality/filters/use_fxaa=true
+quality/filters/use_debanding=true
+quality/depth/use_32_bpc_depth=true

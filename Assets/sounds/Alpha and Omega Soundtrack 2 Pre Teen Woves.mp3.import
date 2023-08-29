@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Alpha and Omega Soundtrack 2 Pre Teen Woves.mp3-524781d065cb1661effd32cd97533166.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/Alpha and Omega Soundtrack 2 Pre Teen Woves.mp3"
+dest_files=[ "res://.import/Alpha and Omega Soundtrack 2 Pre Teen Woves.mp3-524781d065cb1661effd32cd97533166.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

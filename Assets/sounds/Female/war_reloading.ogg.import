@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/war_reloading.ogg-a362fd56214c901f5c369d1e878f1cfc.oggstr"
+
+[deps]
+
+source_file="res://Assets/sounds/Female/war_reloading.ogg"
+dest_files=[ "res://.import/war_reloading.ogg-a362fd56214c901f5c369d1e878f1cfc.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

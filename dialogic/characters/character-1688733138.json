@@ -1,0 +1,37 @@
+{
+	"color": "#ff4400ff",
+	"description": "The Metal Wolf Anthro, The Weapon Expert",
+	"display_name": "Metal Wolf Anthro MK CCCLX",
+	"display_name_bool": true,
+	"id": "character-1688733138.json",
+	"mirror_portraits": false,
+	"name": "Metal Wolf Anthro MK CCCLX",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Assets/images/NPC/Metal Wolf Anthro MK CCCLX/Metal Wolf Anthro MK CCCLX standby normal.png"
+		},
+		{
+			"name": "Metal Wolf Anthro MK CCCLX Over",
+			"path": "res://Assets/images/NPC/Metal Wolf Anthro MK CCCLX/Metal Wolf Anthro MK CCCLX lets go.png"
+		},
+		{
+			"name": "Metal Wolf Anthro MK CCCLX standby Glanting",
+			"path": "res://Assets/images/NPC/Metal Wolf Anthro MK CCCLX/Metal Wolf Anthro MK CCCLX standby Glanting.png"
+		},
+		{
+			"name": "Metal Wolf Anthro MK CCCLX missle",
+			"path": "res://Assets/images/NPC/Metal Wolf Anthro MK CCCLX/Metal Wolf Anthro MK CCCLX missle.png"
+		},
+		{
+			"name": "Metal Wolf Anthro MK CCCLX standby glanting 2",
+			"path": "res://Assets/images/NPC/Metal Wolf Anthro MK CCCLX/Metal Wolf Anthro MK CCCLX standby glanting 2 407 x 687.png"
+		}
+	],
+	"scale": 90,
+	"theme": "theme-1688737489.cfg"
+}

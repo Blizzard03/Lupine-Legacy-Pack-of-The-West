@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/war_fire_in_the_hole.ogg-7aa5200560d17785eacf49c85748ab4a.oggstr"
+
+[deps]
+
+source_file="res://Assets/sounds/Male/war_fire_in_the_hole.ogg"
+dest_files=[ "res://.import/war_fire_in_the_hole.ogg-7aa5200560d17785eacf49c85748ab4a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/war_medic.ogg-ee85e2a9a8577d349f5a6122bebc84e9.oggstr"
+
+[deps]
+
+source_file="res://Assets/sounds/Male/war_medic.ogg"
+dest_files=[ "res://.import/war_medic.ogg-ee85e2a9a8577d349f5a6122bebc84e9.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

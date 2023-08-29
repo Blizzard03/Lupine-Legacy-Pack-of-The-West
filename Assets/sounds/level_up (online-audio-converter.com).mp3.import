@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/level_up (online-audio-converter.com).mp3-7b4dea1a730b07cbfeb505c573ed5341.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/level_up (online-audio-converter.com).mp3"
+dest_files=[ "res://.import/level_up (online-audio-converter.com).mp3-7b4dea1a730b07cbfeb505c573ed5341.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

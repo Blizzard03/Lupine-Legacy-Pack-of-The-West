@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/X-WOLF menu.mp3-d4d326fb6dee5daeb3315087515a5450.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/X-WOLF menu.mp3"
+dest_files=[ "res://.import/X-WOLF menu.mp3-d4d326fb6dee5daeb3315087515a5450.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

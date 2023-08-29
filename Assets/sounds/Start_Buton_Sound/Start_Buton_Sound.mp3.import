@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Start_Buton_Sound.mp3-369b82b34f2c9b86900bc8294f4fe882.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/Start_Buton_Sound/Start_Buton_Sound.mp3"
+dest_files=[ "res://.import/Start_Buton_Sound.mp3-369b82b34f2c9b86900bc8294f4fe882.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

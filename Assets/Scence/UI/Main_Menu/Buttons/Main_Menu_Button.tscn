@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Font/DEADLY CLAWS[.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=1]
+size = 35
+outline_color = Color( 0.101961, 0.913725, 0.92549, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[node name="Main_Menu_Button" type="Button"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_right = 360.0
+margin_bottom = 60.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 360, 60 )
+custom_colors/font_color = Color( 0.101961, 0.913725, 0.92549, 1 )
+custom_colors/font_color_shadow = Color( 0.0196078, 0.490196, 0.470588, 1 )
+custom_constants/shadow_offset_x = 6
+custom_constants/shadow_offset_y = 0
+custom_fonts/font = SubResource( 1 )
+text = "LABEL"
+align = 1
+valign = 1

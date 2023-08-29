@@ -1,0 +1,320 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assets/images/Background/Option/Settings.jpeg" type="Texture" id=1]
+[ext_resource path="res://Assets/Font/unispace bd.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Script/Controller/Option/Options_Controller.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Scence/UI/Options/Button/Back_Button.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/Scence/UI/Options/Button/Save_Button.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Assets/sounds/Click button.mp3" type="AudioStream" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 2 )
+
+[node name="Settings" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+self_modulate = Color( 1, 1, 1, 0.635294 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1280.0
+margin_bottom = 720.0
+rect_min_size = Vector2( 1280, 720 )
+texture = ExtResource( 1 )
+expand = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect"]
+margin_left = 250.0
+margin_top = 118.0
+margin_right = 1050.0
+margin_bottom = 568.0
+rect_min_size = Vector2( 800, 450 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 15
+
+[node name="Settings" type="TabContainer" parent="TextureRect/VBoxContainer"]
+self_modulate = Color( 1, 1, 1, 0.807843 )
+margin_right = 800.0
+margin_bottom = 300.0
+rect_min_size = Vector2( 800, 300 )
+
+[node name="Video" type="Tabs" parent="TextureRect/VBoxContainer/Settings"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="GridContainer" type="GridContainer" parent="TextureRect/VBoxContainer/Settings/Video"]
+margin_left = 10.0
+margin_top = 15.0
+margin_right = 770.0
+margin_bottom = 140.0
+custom_constants/vseparation = 15
+custom_constants/hseparation = 340
+columns = 2
+
+[node name="Display_Mode" type="Label" parent="TextureRect/VBoxContainer/Settings/Video/GridContainer"]
+visible = false
+margin_right = 120.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 1 )
+text = "Display Mode"
+
+[node name="Display_Mode_Options" type="OptionButton" parent="TextureRect/VBoxContainer/Settings/Video/GridContainer"]
+visible = false
+margin_right = 300.0
+margin_bottom = 20.0
+text = "Windowed"
+items = [ "Windowed", null, false, 0, null, "Full Screen", null, false, 1, null ]
+selected = 0
+
+[node name="V_Sync" type="Label" parent="TextureRect/VBoxContainer/Settings/Video/GridContainer"]
+margin_top = 10.0
+margin_right = 120.0
+margin_bottom = 30.0
+custom_fonts/font = SubResource( 1 )
+text = "V-Sync"
+
+[node name="V_Sync_Switch" type="CheckButton" parent="TextureRect/VBoxContainer/Settings/Video/GridContainer"]
+margin_left = 460.0
+margin_right = 760.0
+margin_bottom = 40.0
+
+[node name="Display_FPS" type="Label" parent="TextureRect/VBoxContainer/Settings/Video/GridContainer"]
+visible = false
+margin_top = 65.0
+margin_right = 120.0
+margin_bottom = 85.0
+custom_fonts/font = SubResource( 1 )
+text = "Display_FPS"
+
+[node name="Display_FPS_Switch" type="CheckButton" parent="TextureRect/VBoxContainer/Settings/Video/GridContainer"]
+visible = false
+margin_top = 55.0
+margin_right = 300.0
+margin_bottom = 95.0
+
+[node name="Max_FPS" type="Label" parent="TextureRect/VBoxContainer/Settings/Video/GridContainer"]
+margin_top = 55.0
+margin_right = 120.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 120, 20 )
+custom_fonts/font = SubResource( 1 )
+text = "Max_FPS"
+
+[node name="Max_FPS_Settings" type="HBoxContainer" parent="TextureRect/VBoxContainer/Settings/Video/GridContainer"]
+margin_left = 460.0
+margin_top = 55.0
+margin_right = 760.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 300, 20 )
+size_flags_horizontal = 3
+
+[node name="Max_FPS_Slider" type="HSlider" parent="TextureRect/VBoxContainer/Settings/Video/GridContainer/Max_FPS_Settings"]
+margin_right = 250.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 250, 16 )
+ticks_on_borders = true
+
+[node name="Max_FPS_Label" type="Label" parent="TextureRect/VBoxContainer/Settings/Video/GridContainer/Max_FPS_Settings"]
+margin_left = 254.0
+margin_right = 254.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 1 )
+
+[node name="Contrast" type="Label" parent="TextureRect/VBoxContainer/Settings/Video/GridContainer"]
+margin_top = 90.0
+margin_right = 120.0
+margin_bottom = 110.0
+custom_fonts/font = SubResource( 1 )
+text = "Contrast"
+
+[node name="Contrast_Settings" type="HBoxContainer" parent="TextureRect/VBoxContainer/Settings/Video/GridContainer"]
+margin_left = 460.0
+margin_top = 90.0
+margin_right = 760.0
+margin_bottom = 110.0
+rect_min_size = Vector2( 300, 20 )
+size_flags_horizontal = 3
+
+[node name="Contrast_Slider" type="HSlider" parent="TextureRect/VBoxContainer/Settings/Video/GridContainer/Contrast_Settings"]
+margin_right = 250.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 250, 16 )
+ticks_on_borders = true
+
+[node name="Max_Contrast_Label" type="Label" parent="TextureRect/VBoxContainer/Settings/Video/GridContainer/Contrast_Settings"]
+margin_left = 254.0
+margin_right = 254.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 1 )
+
+[node name="Brightness" type="Label" parent="TextureRect/VBoxContainer/Settings/Video/GridContainer"]
+margin_top = 125.0
+margin_right = 120.0
+margin_bottom = 145.0
+custom_fonts/font = SubResource( 1 )
+text = "Brightness"
+
+[node name="Brightness_Settings" type="HBoxContainer" parent="TextureRect/VBoxContainer/Settings/Video/GridContainer"]
+margin_left = 460.0
+margin_top = 125.0
+margin_right = 760.0
+margin_bottom = 145.0
+rect_min_size = Vector2( 300, 20 )
+size_flags_horizontal = 3
+
+[node name="Brightness_Slider" type="HSlider" parent="TextureRect/VBoxContainer/Settings/Video/GridContainer/Brightness_Settings"]
+margin_right = 250.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 250, 16 )
+ticks_on_borders = true
+
+[node name="Max_Brightness_Label" type="Label" parent="TextureRect/VBoxContainer/Settings/Video/GridContainer/Brightness_Settings"]
+margin_left = 254.0
+margin_right = 254.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 1 )
+
+[node name="Audio" type="Tabs" parent="TextureRect/VBoxContainer/Settings"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="GridContainer" type="GridContainer" parent="TextureRect/VBoxContainer/Settings/Audio"]
+margin_left = 10.0
+margin_top = 90.0
+margin_right = 780.0
+margin_bottom = 180.0
+custom_constants/vseparation = 15
+custom_constants/hseparation = 340
+columns = 2
+
+[node name="Master_Volume" type="Label" parent="TextureRect/VBoxContainer/Settings/Audio/GridContainer"]
+margin_right = 130.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 1 )
+text = "Master Volume"
+
+[node name="Master_Volume_Settings" type="HBoxContainer" parent="TextureRect/VBoxContainer/Settings/Audio/GridContainer"]
+margin_left = 470.0
+margin_right = 770.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 300, 20 )
+size_flags_horizontal = 3
+
+[node name="Master_Slider" type="HSlider" parent="TextureRect/VBoxContainer/Settings/Audio/GridContainer/Master_Volume_Settings"]
+margin_right = 250.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 250, 16 )
+ticks_on_borders = true
+
+[node name="Max_Master_Label" type="Label" parent="TextureRect/VBoxContainer/Settings/Audio/GridContainer/Master_Volume_Settings"]
+margin_left = 254.0
+margin_right = 254.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 1 )
+
+[node name="Music_Volume" type="Label" parent="TextureRect/VBoxContainer/Settings/Audio/GridContainer"]
+margin_top = 35.0
+margin_right = 130.0
+margin_bottom = 55.0
+custom_fonts/font = SubResource( 1 )
+text = "Music Volume"
+
+[node name="Music_Volume_Settings" type="HBoxContainer" parent="TextureRect/VBoxContainer/Settings/Audio/GridContainer"]
+margin_left = 470.0
+margin_top = 35.0
+margin_right = 770.0
+margin_bottom = 55.0
+rect_min_size = Vector2( 300, 20 )
+size_flags_horizontal = 3
+
+[node name="Music_Slider" type="HSlider" parent="TextureRect/VBoxContainer/Settings/Audio/GridContainer/Music_Volume_Settings"]
+margin_right = 250.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 250, 16 )
+ticks_on_borders = true
+
+[node name="Max_Music_Label" type="Label" parent="TextureRect/VBoxContainer/Settings/Audio/GridContainer/Music_Volume_Settings"]
+margin_left = 254.0
+margin_right = 254.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 1 )
+
+[node name="SFX_Volume" type="Label" parent="TextureRect/VBoxContainer/Settings/Audio/GridContainer"]
+margin_top = 70.0
+margin_right = 130.0
+margin_bottom = 90.0
+custom_fonts/font = SubResource( 1 )
+text = "SFX Volume"
+
+[node name="SFX_Volume_Settings" type="HBoxContainer" parent="TextureRect/VBoxContainer/Settings/Audio/GridContainer"]
+margin_left = 470.0
+margin_top = 70.0
+margin_right = 770.0
+margin_bottom = 90.0
+rect_min_size = Vector2( 300, 20 )
+size_flags_horizontal = 3
+
+[node name="SFX_Slider" type="HSlider" parent="TextureRect/VBoxContainer/Settings/Audio/GridContainer/SFX_Volume_Settings"]
+margin_right = 250.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 250, 16 )
+ticks_on_borders = true
+
+[node name="Max_SFX_Label" type="Label" parent="TextureRect/VBoxContainer/Settings/Audio/GridContainer/SFX_Volume_Settings"]
+margin_left = 254.0
+margin_right = 254.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 1 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TextureRect/VBoxContainer"]
+margin_top = 315.0
+margin_right = 800.0
+margin_bottom = 355.0
+rect_min_size = Vector2( 775, 40 )
+custom_constants/separation = 630
+
+[node name="Back_Button" parent="TextureRect/VBoxContainer/HBoxContainer" instance=ExtResource( 4 )]
+
+[node name="Back_Sound" type="AudioStreamPlayer2D" parent="TextureRect/VBoxContainer/HBoxContainer/Back_Button"]
+stream = ExtResource( 6 )
+volume_db = -20.0
+bus = "SFX"
+
+[node name="Save_Button" parent="TextureRect/VBoxContainer/HBoxContainer" instance=ExtResource( 5 )]
+margin_left = 694.0
+margin_right = 758.0
+
+[node name="Save" type="AudioStreamPlayer2D" parent="TextureRect/VBoxContainer/HBoxContainer/Save_Button"]
+stream = ExtResource( 6 )
+volume_db = -20.0
+bus = "SFX"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+margin_right = 798.0
+margin_bottom = 599.0
+color = Color( 0.21875, 0.21875, 0.21875, 1 )
+
+[connection signal="item_selected" from="TextureRect/VBoxContainer/Settings/Video/GridContainer/Display_Mode_Options" to="." method="_on_Display_Mode_Options_item_selected"]
+[connection signal="toggled" from="TextureRect/VBoxContainer/Settings/Video/GridContainer/V_Sync_Switch" to="." method="_on_V_Sync_Switch_toggled"]
+[connection signal="toggled" from="TextureRect/VBoxContainer/Settings/Video/GridContainer/Display_FPS_Switch" to="." method="_on_Display_FPS_Switch_toggled"]
+[connection signal="value_changed" from="TextureRect/VBoxContainer/Settings/Video/GridContainer/Max_FPS_Settings/Max_FPS_Slider" to="." method="_on_Max_FPS_Slider_value_changed"]
+[connection signal="value_changed" from="TextureRect/VBoxContainer/Settings/Video/GridContainer/Contrast_Settings/Contrast_Slider" to="." method="_on_Contrast_Slider_value_changed"]
+[connection signal="value_changed" from="TextureRect/VBoxContainer/Settings/Video/GridContainer/Brightness_Settings/Brightness_Slider" to="." method="_on_Brightness_Slider_value_changed"]
+[connection signal="value_changed" from="TextureRect/VBoxContainer/Settings/Audio/GridContainer/Master_Volume_Settings/Master_Slider" to="." method="_on_Master_Slider_value_changed"]
+[connection signal="value_changed" from="TextureRect/VBoxContainer/Settings/Audio/GridContainer/Music_Volume_Settings/Music_Slider" to="." method="_on_Music_Slider_value_changed"]
+[connection signal="value_changed" from="TextureRect/VBoxContainer/Settings/Audio/GridContainer/SFX_Volume_Settings/SFX_Slider" to="." method="_on_SFX_Slider_value_changed"]
+[connection signal="mouse_entered" from="TextureRect/VBoxContainer/HBoxContainer/Back_Button" to="." method="_on_Back_Button_mouse_entered"]
+[connection signal="pressed" from="TextureRect/VBoxContainer/HBoxContainer/Back_Button" to="." method="_on_Back_Button_pressed"]
+[connection signal="mouse_entered" from="TextureRect/VBoxContainer/HBoxContainer/Save_Button" to="." method="_on_Save_Button_mouse_entered"]
+[connection signal="pressed" from="TextureRect/VBoxContainer/HBoxContainer/Save_Button" to="." method="_on_Save_Button_pressed"]

@@ -1,0 +1,147 @@
+{
+	"events": [
+		{
+			"background": "res://Assets/images/Background/Info_Intro/Hill.png",
+			"event_id": "dialogic_021"
+		},
+		{
+			"audio_bus": "Music",
+			"background-music": "play",
+			"event_id": "dialogic_031",
+			"event_name": "BackgroundMusic",
+			"fade_length": 1,
+			"file": "res://Assets/sounds/How_To_Play/Clift.mp3",
+			"volume": -5
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 1.5,
+			"animation_wait": true,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1688733138.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": true,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1688733138.json",
+			"event_id": "dialogic_001",
+			"portrait": "(Don't change)",
+			"text": "Hello There, My name is Metal Wolf MK CCCLX. I am the prototype of Metal Garurumon X.  I'm here to explain the mechanics of this 'Lupine Legacy : The Pack of West' game. [b]For the next dialogue or interaction [/b], press [wave amp=45 freq=3][b] Z[/b][/wave]",
+			"voice_data": {
+				"0": {
+					"audio_bus": "Dialogue",
+					"file": "res://Assets/sounds/Dialogues/Metal Wolf Anthro MK CCCLX/Metal_Wolf_Anthro_MK_CCCLX_D1.mp3"
+				}
+			}
+		},
+		{
+			"character": "character-1688733138.json",
+			"event_id": "dialogic_001",
+			"portrait": "Metal Wolf Anthro MK CCCLX standby Glanting",
+			"text": "Press [wave amp=45 freq=3][b]W[/b][/wave]  to go forward",
+			"voice_data": {
+				"0": {
+					"audio_bus": "Dialogue",
+					"file": "res://Assets/sounds/Dialogues/Metal Wolf Anthro MK CCCLX/Metal Wolf Anthro MK CCCLX D02.mp3"
+				}
+			}
+		},
+		{
+			"character": "character-1688733138.json",
+			"event_id": "dialogic_001",
+			"portrait": "Metal Wolf Anthro MK CCCLX standby glanting 2",
+			"text": "Press [wave amp=45 freq=3][b]S[/b][/wave] to go backward",
+			"voice_data": {
+				"0": {
+					"audio_bus": "Dialogue",
+					"file": "res://Assets/sounds/Dialogues/Metal Wolf Anthro MK CCCLX/Metal Wolf Anthro MK CCCLX D03.mp3"
+				}
+			}
+		},
+		{
+			"character": "character-1688733138.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Press [wave amp=45 freq=3][b]A[/b][/wave] to move left",
+			"voice_data": {
+				"0": {
+					"audio_bus": "Dialogue",
+					"file": "res://Assets/sounds/Dialogues/Metal Wolf Anthro MK CCCLX/Metal Wolf Anthro MK CCCLX D04.mp3"
+				}
+			}
+		},
+		{
+			"character": "character-1688733138.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Press [wave amp=45 freq=3][b]D[/b][/wave] to move right",
+			"voice_data": {
+				"0": {
+					"audio_bus": "Dialogue",
+					"file": "res://Assets/sounds/Dialogues/Metal Wolf Anthro MK CCCLX/Metal Wolf Anthro MK CCCLX D05.mp3"
+				}
+			}
+		},
+		{
+			"character": "character-1688733138.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Press [wave amp=45 freq=3][b]I[/b][/wave] to open inventory",
+			"voice_data": {
+				"0": {
+					"audio_bus": "Dialogue",
+					"file": "res://Assets/sounds/Dialogues/Metal Wolf Anthro MK CCCLX/Metal Wolf Anthro MK CCCLX D06.mp3"
+				}
+			}
+		},
+		{
+			"character": "character-1688733138.json",
+			"event_id": "dialogic_001",
+			"portrait": "Metal Wolf Anthro MK CCCLX missle",
+			"text": "Press [wave amp=45 freq=3][b]P[/b][/wave] to pause the game",
+			"voice_data": {
+				"0": {
+					"audio_bus": "Dialogue",
+					"file": "res://Assets/sounds/Dialogues/Metal Wolf Anthro MK CCCLX/Metal Wolf Anthro MK CCCLX D07.mp3"
+				}
+			}
+		},
+		{
+			"character": "character-1688733138.json",
+			"event_id": "dialogic_001",
+			"portrait": "Metal Wolf Anthro MK CCCLX Over",
+			"text": "That's all from me. Good luck ",
+			"voice_data": {
+				"0": {
+					"audio_bus": "Dialogue",
+					"file": "res://Assets/sounds/Dialogues/Metal Wolf Anthro MK CCCLX/Metal Wolf Anthro MK CCCLX D08.mp3"
+				}
+			}
+		},
+		{
+			"change_scene": "res://Assets/Scence/Character/Selector/Selector_Player.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 0.5
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1688733590.json",
+		"name": "How To Play"
+	}
+}

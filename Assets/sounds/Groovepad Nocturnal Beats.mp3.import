@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Groovepad Nocturnal Beats.mp3-c5eef8bf5720d7cc063cfafbb261c3b8.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/Groovepad Nocturnal Beats.mp3"
+dest_files=[ "res://.import/Groovepad Nocturnal Beats.mp3-c5eef8bf5720d7cc063cfafbb261c3b8.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

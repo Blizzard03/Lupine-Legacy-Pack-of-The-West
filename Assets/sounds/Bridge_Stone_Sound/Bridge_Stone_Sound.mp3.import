@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Bridge_Stone_Sound.mp3-b44d6ccefabd128172092a373787193c.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/Bridge_Stone_Sound/Bridge_Stone_Sound.mp3"
+dest_files=[ "res://.import/Bridge_Stone_Sound.mp3-b44d6ccefabd128172092a373787193c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

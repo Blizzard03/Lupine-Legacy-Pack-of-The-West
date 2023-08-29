@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Font/unispace bd.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/Script/Controller/UI/FPS_Label/FPS.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.67451, 0.67451, 0.67451, 1 )
+
+[node name="FPS_Label" type="Label"]
+margin_right = 40.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 90, 20 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+custom_styles/normal = SubResource( 2 )
+valign = 1
+uppercase = true
+script = ExtResource( 2 )

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Clift.mp3-b07caff39d98ce0f4026f121319aa056.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/How_To_Play/Clift.mp3"
+dest_files=[ "res://.import/Clift.mp3-b07caff39d98ce0f4026f121319aa056.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

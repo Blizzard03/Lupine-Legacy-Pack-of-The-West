@@ -1,0 +1,147 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Assets/Scence/UI/Character Selector/Luna_Button_Selector.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Scence/UI/Character Selector/Blizzard_Button_Selector.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/images/Background/Character Selector/wolf-den-cave-taiga-forest 800x 600.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Font/Pixel 64p.tres" type="DynamicFont" id=4]
+[ext_resource path="res://Assets/images/Movement/Male/Timber Wolf/Timber Wolf.png" type="Texture" id=5]
+[ext_resource path="res://Assets/images/Movement/Female/Artic Wolf/Artic.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Script/Controller/Character_Selector/Selector_Player.gd" type="Script" id=7]
+[ext_resource path="res://Assets/Font/Pixel 32p.tres" type="DynamicFont" id=8]
+[ext_resource path="res://Assets/sounds/Groovepad Nocturnal Beats.mp3" type="AudioStream" id=9]
+[ext_resource path="res://Assets/sounds/Click button.mp3" type="AudioStream" id=10]
+[ext_resource path="res://Assets/Font/DisposableDroidBB_bldital.ttf" type="DynamicFontData" id=11]
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.407843, 0.407843, 0.407843, 1 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 35
+font_data = ExtResource( 11 )
+
+[node name="Selector_Player" type="Node2D"]
+script = ExtResource( 7 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+margin_right = 1280.0
+margin_bottom = 720.0
+rect_min_size = Vector2( 1280, 0 )
+texture = ExtResource( 3 )
+expand = true
+
+[node name="Blizzard_Button_Selector" parent="CanvasLayer" instance=ExtResource( 2 )]
+margin_left = 304.0
+margin_top = 188.0
+margin_right = 506.0
+margin_bottom = 223.0
+
+[node name="Blizzard_Button" type="AudioStreamPlayer2D" parent="CanvasLayer/Blizzard_Button_Selector"]
+stream = ExtResource( 10 )
+volume_db = -5.0
+bus = "SFX"
+
+[node name="Luna_Button_Selector" parent="CanvasLayer" instance=ExtResource( 1 )]
+margin_left = 788.0
+margin_top = 190.0
+margin_right = 990.0
+margin_bottom = 225.0
+
+[node name="Luna_Button" type="AudioStreamPlayer2D" parent="CanvasLayer/Luna_Button_Selector"]
+stream = ExtResource( 10 )
+volume_db = -5.0
+bus = "SFX"
+
+[node name="Label_Choice_Char" type="Label" parent="CanvasLayer"]
+margin_left = 388.0
+margin_top = 30.0
+margin_right = 985.0
+margin_bottom = 94.0
+custom_colors/font_color = Color( 0.968627, 0.92549, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.270588, 0.262745, 0.262745, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 8
+custom_fonts/font = ExtResource( 4 )
+custom_styles/normal = SubResource( 2 )
+text = "Choice Your Character"
+align = 1
+valign = 1
+
+[node name="Label_Timber_Wolf" type="Label" parent="CanvasLayer"]
+margin_left = 281.0
+margin_top = 444.0
+margin_right = 536.0
+margin_bottom = 508.0
+rect_pivot_offset = Vector2( -142, -85 )
+custom_colors/font_color = Color( 0.968627, 0.92549, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.270588, 0.262745, 0.262745, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 8
+custom_fonts/font = ExtResource( 8 )
+text = "Timber Wolf"
+align = 1
+valign = 1
+
+[node name="Label_Species_Timber_Wolf" type="Label" parent="CanvasLayer"]
+margin_left = 8.0
+margin_top = 448.0
+margin_right = 263.0
+margin_bottom = 512.0
+rect_pivot_offset = Vector2( 141, 33 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.270588, 0.262745, 0.262745, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 8
+custom_fonts/font = SubResource( 1 )
+text = "Canis lupus"
+align = 1
+valign = 1
+
+[node name="Label_Species_Artic_Wolf" type="Label" parent="CanvasLayer"]
+margin_left = 779.0
+margin_top = 494.0
+margin_right = 1034.0
+margin_bottom = 569.0
+rect_pivot_offset = Vector2( 141, 33 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.270588, 0.262745, 0.262745, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 8
+custom_fonts/font = SubResource( 1 )
+text = "Canis lupus arctos"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Label_Artic_Wolf" type="Label" parent="CanvasLayer"]
+margin_left = 785.0
+margin_top = 444.0
+margin_right = 1040.0
+margin_bottom = 508.0
+custom_colors/font_color = Color( 0.968627, 0.92549, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.270588, 0.262745, 0.262745, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 8
+custom_fonts/font = ExtResource( 8 )
+text = "Artic Wolf"
+align = 1
+valign = 1
+
+[node name="Blizzard_Sprite" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 403, 336 )
+texture = ExtResource( 5 )
+
+[node name="Luna_Sprite" type="Sprite" parent="CanvasLayer"]
+position = Vector2( 892, 340 )
+texture = ExtResource( 6 )
+
+[node name="Backsound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 9 )
+volume_db = -5.0
+bus = "Music"
+
+[connection signal="mouse_entered" from="CanvasLayer/Blizzard_Button_Selector" to="." method="_on_Blizzard_Button_Selector_mouse_entered"]
+[connection signal="pressed" from="CanvasLayer/Blizzard_Button_Selector" to="." method="_on_Blizzard_Button_Selector_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/Luna_Button_Selector" to="." method="_on_Luna_Button_Selector_mouse_entered"]
+[connection signal="pressed" from="CanvasLayer/Luna_Button_Selector" to="." method="_on_Luna_Button_Selector_pressed"]

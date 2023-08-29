@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Kate_Save_Complited.mp3-daf50e9f090b9c32e24f1c888ff7bcc1.mp3str"
+
+[deps]
+
+source_file="res://Assets/sounds/Dialogues/Kate - Save The Game/Kate_Save_Complited.mp3"
+dest_files=[ "res://.import/Kate_Save_Complited.mp3-daf50e9f090b9c32e24f1c888ff7bcc1.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
