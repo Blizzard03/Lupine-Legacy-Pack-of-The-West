@@ -1,0 +1,65 @@
+{
+	"events": [
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "There were 2 wolves in the Stone Bridge taiga forest, the first was an Alpha Male, a Timber Wolf from Western Pack 03. "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "His name was Blizzard Wolf Smith. His father was Dark Wolf Smith, a Black Wolf and his mother was Winter Wolf Smith, an Artic Wolf. Blizzard Wolf Smith was the 17th of 30 brothers and he is also the last of the 7th generation of his family. "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "And the second was an Alpha Female, an Artic Wolf from Western Pack 33. Her name was Luna Lupine, her father was Paroah Lupine, an Artic Wolf and her mother was Pearl Lupine, a Brown Wolf. "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Luna Lupine was the 6th of 7 children and she was also the 3rd generation of her family."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "During the next full moon, hunters (humans) entered the territory of the western wolf pack and exterminated all the wolves in the pack, then Blizzard Wolf Smith or Luna Lupin started to save all the members of the pack,"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "but it was too late because all the members of the pack had been exterminated by the hunters, including their parents who had died protecting them."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1693366789.json",
+		"name": "Intro"
+	}
+}
