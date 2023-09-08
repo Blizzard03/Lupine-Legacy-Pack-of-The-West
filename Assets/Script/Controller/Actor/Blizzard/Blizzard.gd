@@ -5,6 +5,8 @@ signal exp_gain(exp)
 
 export (int) var speed = 70
 
+var Name 
+
 #Blizzard Stat
 export (int) var Blizzard_Health = 100
 export (float) var Blizzard_Stregth = 10.5
@@ -31,7 +33,14 @@ func gain_exp(experience):
 	exp.append([Blizzard_XP, get_required_experience(Blizzard_LV + 1)])
 	emit_signal("exp_gain", exp)
 
+#Getter Name
+func get_name():
+	return Name
 
+#Setter Name
+func set_name (name):
+	name = "Blizzard Wolf Smith"
+	
 #Move Blizzard
 func _physics_process(delta):
 	var input_vector = Vector2.ZERO

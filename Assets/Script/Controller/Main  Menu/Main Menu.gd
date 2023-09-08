@@ -38,4 +38,4 @@ func _on_Continue_Button_mouse_entered():
 	Con_Sound.play()
 
 func _on_Howl_mouse_entered():
-	pass # Replace with function body.
+	Howling.play()
